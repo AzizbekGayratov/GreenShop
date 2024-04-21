@@ -1,0 +1,30 @@
+.modal {
+    position: fixed;
+    z-index: 90;
+    background-color: #00000077;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__close_btn{
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    background-color: red;
+    color: #fff;
+}
+
+.modal__content{
+    background-color: #fff;
+    width: 70%;
+}
+
+.active {
+    display: flex;
+}

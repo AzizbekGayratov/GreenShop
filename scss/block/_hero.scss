@@ -1,0 +1,61 @@
+.hero {
+    padding-top: 20px;
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 53px;
+        background: linear-gradient(134.56deg, rgba(245, 245, 245, 0.5) -23.457%, rgba(245, 245, 245, 0.5) 107.508%);
+    }
+
+    &__content {
+        max-width: 570px;
+    }
+
+    &__des {
+        color: rgb(61, 61, 61);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 10%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 70px;
+        font-weight: 900;
+        line-height: 70px;
+        text-transform: uppercase;
+
+        strong {
+            color: rgb(70, 163, 88);
+        }
+    }
+
+    &__text {
+        color: rgb(114, 114, 114);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__btn {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        padding: 10px 27px 10px 26px;
+        background: rgb(70, 163, 88);
+        margin-top: 55px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
