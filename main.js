@@ -51,6 +51,8 @@ const renderSingleData = (data) => {
             cart.push(data);
             localStorage.setItem("cart", JSON.stringify(cart));
         }
+        modal.classList.remove("active")
+        document.body.style.overflow = "auto";
     })
 }
 

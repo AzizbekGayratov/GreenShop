@@ -22,11 +22,13 @@ const getData = () => {
 
 list, addEventListener("click", (e) => {
     if (e.target.dataset.delete) {
-        const cart = JSON.parse(localStorage.getItem("cart"));
-        const element = cart.find(item => item.id === e.target.dataset.delete);
-        if (element) {
-            cart.pop(e.target.dataset.delete)
-            localStorage.setItem("cart", JSON.stringify(cart));
+        if (confirm("Are you sure ?")) {
+            const cart = JSON.parse(localStorage.getItem("cart"));
+            const element = cart.find(item => item.id === e.target.dataset.delete);
+            if (element) {
+                cart.pop(e.target.dataset.delete)
+                localStorage.setItem("cart", JSON.stringify(cart));
+            }
         }
     }
     getData()
